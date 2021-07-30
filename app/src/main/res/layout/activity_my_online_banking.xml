@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyOnlineBankingActivity">
+
+    <Button
+        android:id="@+id/buttonMakePayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Make Payment"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        app:backgroundTint="#2196F3"
+        app:layout_constraintEnd_toEndOf="@+id/buttonDeposit"
+        app:layout_constraintStart_toStartOf="@+id/buttonDeposit"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDeposit" />
+
+    <Button
+        android:id="@+id/buttonDeposit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deposit"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        app:backgroundTint="#2196F3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMoney"
+        app:layout_constraintVertical_bias="0.32999998" />
+
+    <TextView
+        android:id="@+id/textViewFunds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#67BCFF"
+        android:text="My Funds"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16000003" />
+
+    <TextView
+        android:id="@+id/textViewMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="0"
+        android:textAlignment="textEnd"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewFunds"
+        app:layout_constraintStart_toStartOf="@+id/textViewFunds"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFunds" />
+
+    <Button
+        android:id="@+id/buttonLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Logout"
+        android:textColor="#000000"
+        app:backgroundTint="#FF1100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonWithdraw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Withdraw"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        app:backgroundTint="#2196F3"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDeposit"
+        app:layout_constraintEnd_toEndOf="@+id/buttonDeposit"
+        app:layout_constraintStart_toStartOf="@+id/buttonDeposit" />
+
+    <TextView
+        android:id="@+id/textViewSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:text="£"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewMoney"
+        app:layout_constraintEnd_toStartOf="@+id/textViewMoney"
+        app:layout_constraintTop_toTopOf="@+id/textViewMoney" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
